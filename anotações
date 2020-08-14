@@ -1,0 +1,41 @@
+----------------------------------------------------
+
+Por que não podemos ter dois elementos irmãos?
+
+Todos os componentes precisam ter apenas um elemento pai.
+Caso tenhamos dois elementos irmãos dentro de um componente, vai dar erro.
+
+----------------------------------------------------
+
+Por que precisamos usar o metodo render() dentro de uma classe?
+
+Toda classe component dentro do React, vai tentar renderizar o seu conteúdo. Assim, precisamos adicionar este metodo e retornar o conteudo do componente.
+
+----------------------------------------------------
+
+O React utiliza esse arquivo index.js para inserir todo o conteúdo JSX do App.js no index.html, tornando possível que esse template seja exibido no navegador.
+
+Ele faz isso através de um método interno do ReactDOM chamado render() (que também utiliza JSX ao passar < App /> como parâmetro).
+
+----------------------------------------------------
+
+Nós conseguimos iterar dentro de um arquivo JSX?
+
+Sim, para podermos usar códigos JavaScript dentro de um arquivo JSX, precisamos utilizar as "{}" e inserir o código dentro.
+
+Só precisamos lembrar de adicionar no elemento pai a propriedade key.
+Ela ajuda o JSX a identificar qual elemento ele vai redesenhar.
+
+----------------------------------------------------
+
+Podemos usar dentro do JSX os eventos de HTML, por exemplo, onChange.
+Só que ao atribuirmos um valor por referencia, não podemos esquecer de colocar entre {}.
+Para o JSX entender que é javascript.
+
+todo evento onChange tem como propriedade o target.value para encontrarmos o valor do que foi ocorrido no onChange.
+
+----------------------------------------------------
+
+State: Serve para guardar valores/estado que podem vir a mudar com a interação do usuário com o componente, tendo efeito na renderização do mesmo, o state pode ser passado como props!
+
+Props: Valores para a configuração de um componente, essas props são passadas pelo elemento acima (que utiliza o componente que irá receber) e são imutáveis, utilizado para a comunicação de componentes.
